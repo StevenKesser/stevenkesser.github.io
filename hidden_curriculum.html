@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Hidden Curriculum | Steven Kesser</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "default",
+      flowchart: {
+        useMaxWidth: true,
+        htmlLabels: true,
+        curve: "basis"
+      }
+    });
+  </script>
+</head>
+
+<body>
+  <main class="container">
+
+    <header class="page-header">
+      <h1>Hidden Curriculum for Mathematics and Statistics Students</h1>
+
+      <p>
+        This page is a growing resource for students interested in mathematics,
+        statistics, data science, research, and graduate school preparation.
+        One part of the hidden curriculum is learning how courses fit together:
+        which courses build technical maturity, which courses open research
+        opportunities, and which courses prepare you for more advanced work.
+      </p>
+
+      <p>
+        Below is one example: my own course pathway through mathematics,
+        statistics, computer science, data science, and related STEM courses at
+        the University of Georgia.
+      </p>
+
+      <p>
+        <a href="index.html">Back to homepage</a>
+      </p>
+    </header>
+
+    <section>
+      <h2>My Course Pathway</h2>
+
+      <p>
+        This diagram is not meant to be the only correct path. It is one example
+        of how a student can move from calculus into proof-based mathematics,
+        applied mathematics, statistics, data science, computer science, and
+        undergraduate research.
+      </p>
+
+      <div class="mermaid course-map">
+        graph TD
+
+          %% Background / placement
+          P0["MATH 1113<br/>Precalculus<br/><span class='small'>placement credit</span>"]
+          P1["MATH 1101<br/>Intro to Mathematical Modeling<br/><span class='small'>placement credit</span>"]
+          S0["STAT 2000<br/>Introductory Statistics<br/><span class='small'>AP credit</span>"]
+          PSYC["PSYC 1101<br/>Elementary Psychology<br/><span class='small'>AP credit</span>"]
+
+          %% Fall 2023
+          C1["MATH 2250<br/>Calculus I for Science and Engineering<br/><span class='small'>Fall 2023</span>"]
+          WTHR["GEOG 1112<br/>Intro to Weather and Climate<br/><span class='small'>Fall 2023</span>"]
+
+          %% Spring 2024
+          C2["MATH 2260<br/>Calculus II for Science and Engineering<br/><span class='small'>Spring 2024</span>"]
+          CS1["CSCI 1301<br/>Introduction to Computing and Programming<br/><span class='small'>Spring 2024</span>"]
+          ECOL["ECOL 1000 / 1000L<br/>Ecological Basis of Environmental Issues + Lab<br/><span class='small'>Spring 2024</span>"]
+
+          %% Summer 2024
+          ODE1["MATH 2700<br/>Elementary Differential Equations<br/><span class='small'>Summer 2024</span>"]
+          DISC["CSCI 2610E<br/>Discrete Mathematics for CSCI<br/><span class='small'>Summer 2024</span>"]
+
+          %% Fall 2024
+          CS2["CSCI 1302<br/>Software Development<br/><span class='small'>Fall 2024</span>"]
+          LA["MATH 3300<br/>Applied Linear Algebra<br/><span class='small'>Fall 2024</span>"]
+          SM["STAT 4210<br/>Statistical Methods<br/><span class='small'>Fall 2024</span>"]
+
+          %% Spring 2025
+          C3["MATH 2270<br/>Calculus III for Science and Mathematics<br/><span class='small'>Spring 2025</span>"]
+          PROOF["MATH 3200W<br/>Introduction to Higher Mathematics<br/><span class='small'>Spring 2025</span>"]
+          RPROG["STAT 2360<br/>Programming and Data Literacy Using R<br/><span class='small'>Spring 2025</span>"]
+          DSALG["CSCI 2720<br/>Data Structures<br/><span class='small'>Spring 2025</span>"]
+
+          %% Summer 2025
+          DS1["CSCI 3360E<br/>Data Science I<br/><span class='small'>Summer 2025</span>"]
+          EXP["STAT 4220<br/>Applied Experimental Designs<br/><span class='small'>Summer 2025</span>"]
+          REG["STAT 4230<br/>Applied Regression Analysis<br/><span class='small'>Summer 2025</span>"]
+          MSP["STAT 6365E<br/>Modern Statistical Programming<br/><span class='small'>Summer 2025</span>"]
+          MST["STAT 6510<br/>Mathematical Statistics I<br/><span class='small'>Summer 2025</span>"]
+
+          %% Fall 2025
+          ANALYSIS0["MATH 3100<br/>Introduction to Mathematical Analysis<br/><span class='small'>Fall 2025</span>"]
+          ODE2["MATH 4700<br/>Qualitative Ordinary Differential Equations<br/><span class='small'>Fall 2025</span>"]
+          DSSTAT["STAT 4950<br/>Undergraduate Directed Study in Statistics<br/><span class='small'>Fall 2025</span>"]
+          MULTI["STAT 6250<br/>Applied Multivariate Analysis<br/><span class='small'>Fall 2025</span>"]
+          TS["STAT 6280<br/>Applied Time Series Analysis<br/><span class='small'>Fall 2025</span>"]
+
+          %% Spring 2026
+          NUM["MATH 4500<br/>Numerical Analysis I<br/><span class='small'>Spring 2026</span>"]
+          PDE["MATH 4720<br/>Introduction to PDEs<br/><span class='small'>Spring 2026</span>"]
+          OPT["MATH 4740<br/>Optimization and Data Analysis<br/><span class='small'>Spring 2026</span>"]
+          RES["STAT 4960R<br/>Undergraduate Research I<br/><span class='small'>Spring 2026</span>"]
+          INF["STAT 6530<br/>Statistical Inference for Data Scientists<br/><span class='small'>Spring 2026</span>"]
+
+          %% Fall 2026 in progress
+          RA["MATH 4100<br/>Real Analysis<br/><span class='small'>Fall 2026, in progress/planned</span>"]
+          CAP["STAT 5010W<br/>Statistical Capstone Course I<br/><span class='small'>Fall 2026, in progress/planned</span>"]
+          BAYES["STAT 6350<br/>Applied Bayesian Statistics<br/><span class='small'>Fall 2026, in progress/planned</span>"]
+          PROB["STAT 6810<br/>Probability Distributions<br/><span class='small'>Fall 2026, in progress/planned</span>"]
+
+          %% Main math pathway
+          P0 --> C1
+          P1 --> C1
+          C1 --> C2
+          C2 --> C3
+          C2 --> ODE1
+          C3 --> LA
+          C3 --> PROOF
+          PROOF --> ANALYSIS0
+          ANALYSIS0 --> RA
+
+          %% Applied math pathway
+          ODE1 --> ODE2
+          C3 --> ODE2
+          LA --> NUM
+          C3 --> NUM
+          LA --> OPT
+          C3 --> OPT
+          ODE2 --> PDE
+          C3 --> PDE
+
+          %% Statistics pathway
+          S0 --> SM
+          SM --> RPROG
+          SM --> EXP
+          SM --> REG
+          REG --> MST
+          RPROG --> MSP
+          REG --> MSP
+          MST --> INF
+          MST --> MULTI
+          REG --> MULTI
+          REG --> TS
+          MST --> PROB
+          MST --> BAYES
+          INF --> BAYES
+          MULTI --> CAP
+          TS --> CAP
+          INF --> CAP
+
+          %% Computer science / data science pathway
+          CS1 --> CS2
+          CS1 --> DISC
+          DISC --> DSALG
+          CS2 --> DSALG
+          RPROG --> DS1
+          DSALG --> DS1
+          DS1 --> MSP
+
+          %% Research pathway
+          LA --> DSSTAT
+          MST --> DSSTAT
+          DSSTAT --> RES
+          INF --> RES
+          MULTI --> RES
+          RES --> CAP
+
+          %% Supporting STEM / application context
+          PSYC --> RES
+          WTHR --> DS1
+          ECOL --> DS1
+          WTHR --> TS
+          ECOL --> REG
+      </div>
+    </section>
+
+    <section>
+      <h2>How to Read This Pathway</h2>
+
+      <p>
+        The main foundation is calculus, programming, introductory statistics,
+        and linear algebra. These courses unlock most of the later coursework.
+        Calculus leads into multivariable calculus, differential equations,
+        analysis, numerical analysis, optimization, and partial differential
+        equations. Programming leads into software development, data structures,
+        data science, and statistical programming. Introductory statistics leads
+        into regression, experimental design, mathematical statistics,
+        multivariate analysis, time series, Bayesian statistics, probability,
+        and statistical inference.
+      </p>
+
+      <p>
+        The most important hidden lesson is that the course sequence is not just
+        about satisfying requirements. Some courses change what kinds of
+        questions you can ask. Linear algebra makes statistics and optimization
+        more understandable. Proof-based courses make graduate-level probability
+        and analysis less intimidating. Programming courses make research and
+        applied statistics much more realistic.
+      </p>
+    </section>
+
+    <section>
+      <h2>What I Would Tell Another Student</h2>
+
+      <ul>
+        <li>
+          Take calculus and linear algebra seriously. They appear again in
+          optimization, numerical analysis, regression, machine learning,
+          probability, and statistical inference.
+        </li>
+
+        <li>
+          Learn programming earlier than you think you need it. R, Python, and
+          general computer science skills make statistics much more useful.
+        </li>
+
+        <li>
+          Do not treat statistics as just a collection of formulas. Courses like
+          regression, experimental design, mathematical statistics, Bayesian
+          statistics, and probability are connected by common ideas about
+          uncertainty, modeling, estimation, and inference.
+        </li>
+
+        <li>
+          Take at least one proof-based math course before deciding whether you
+          like theoretical statistics or graduate-level mathematics.
+        </li>
+
+        <li>
+          Look for research opportunities before you feel completely ready.
+          Research is often where separate courses start to connect.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Course Groups</h2>
+
+      <h3>Mathematics Foundation</h3>
+      <p>
+        Calculus I, Calculus II, Calculus III, Elementary Differential Equations,
+        Applied Linear Algebra, and Introduction to Higher Mathematics formed
+        the core of my mathematical foundation.
+      </p>
+
+      <h3>Applied Mathematics and Analysis</h3>
+      <p>
+        Introduction to Mathematical Analysis, Qualitative Ordinary Differential
+        Equations, Numerical Analysis, Partial Differential Equations,
+        Optimization, and Real Analysis formed the applied and theoretical
+        mathematics side of my path.
+      </p>
+
+      <h3>Statistics and Data Science</h3>
+      <p>
+        Introductory Statistics, Statistical Methods, Programming and Data
+        Literacy Using R, Experimental Designs, Regression, Mathematical
+        Statistics, Multivariate Analysis, Time Series, Modern Statistical
+        Programming, Statistical Inference for Data Scientists, Bayesian
+        Statistics, Probability Distributions, and Statistical Capstone formed
+        the statistics and data science side.
+      </p>
+
+      <h3>Computer Science</h3>
+      <p>
+        Introduction to Computing and Programming, Software Development,
+        Discrete Mathematics for CSCI, Data Structures, and Data Science I
+        helped me build the computational background needed for data science,
+        statistical computing, and applied research.
+      </p>
+
+      <h3>Research and Application Context</h3>
+      <p>
+        My undergraduate directed study and undergraduate research course helped
+        connect coursework to research. Courses in psychology, ecology, and
+        weather/climate also gave useful context for applied work involving
+        behavioral, environmental, and scientific data.
+      </p>
+    </section>
+
+    <section>
+      <h2>Why This Is Part of the Hidden Curriculum</h2>
+
+      <p>
+        Many students are told what courses are required, but not why certain
+        courses matter or how they connect. A transcript lists classes one at a
+        time, but the real value is in the structure: which courses give you
+        language, which courses give you tools, and which courses prepare you
+        for research.
+      </p>
+
+      <p>
+        For students interested in statistics, data science, or graduate school,
+        the hidden curriculum is learning how to build a coherent path. That
+        means combining theory, computation, applications, and mentorship rather
+        than treating each class as separate.
+      </p>
+    </section>
+
+    <footer>
+      <p>
+        <a href="index.html">Back to homepage</a>
+      </p>
+    </footer>
+
+  </main>
+</body>
+</html>
