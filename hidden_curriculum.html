@@ -38,7 +38,7 @@
 
       <p>
         Below is one example: my own course pathway through mathematics,
-        statistics, computer science, data science, and related STEM courses at
+        statistics, computer science, data science, and research-oriented coursework at
         the University of Georgia.
       </p>
 
@@ -61,19 +61,14 @@
         graph TD
 
           %% Background / placement
-          P0["MATH 1113<br/>Precalculus<br/><span class='small'>placement credit</span>"]
-          P1["MATH 1101<br/>Intro to Mathematical Modeling<br/><span class='small'>placement credit</span>"]
           S0["STAT 2000<br/>Introductory Statistics<br/><span class='small'>AP credit</span>"]
-          PSYC["PSYC 1101<br/>Elementary Psychology<br/><span class='small'>AP credit</span>"]
 
           %% Fall 2023
           C1["MATH 2250<br/>Calculus I for Science and Engineering<br/><span class='small'>Fall 2023</span>"]
-          WTHR["GEOG 1112<br/>Intro to Weather and Climate<br/><span class='small'>Fall 2023</span>"]
 
           %% Spring 2024
           C2["MATH 2260<br/>Calculus II for Science and Engineering<br/><span class='small'>Spring 2024</span>"]
           CS1["CSCI 1301<br/>Introduction to Computing and Programming<br/><span class='small'>Spring 2024</span>"]
-          ECOL["ECOL 1000 / 1000L<br/>Ecological Basis of Environmental Issues + Lab<br/><span class='small'>Spring 2024</span>"]
 
           %% Summer 2024
           ODE1["MATH 2700<br/>Elementary Differential Equations<br/><span class='small'>Summer 2024</span>"]
@@ -100,7 +95,7 @@
           %% Fall 2025
           ANALYSIS0["MATH 3100<br/>Introduction to Mathematical Analysis<br/><span class='small'>Fall 2025</span>"]
           ODE2["MATH 4700<br/>Qualitative Ordinary Differential Equations<br/><span class='small'>Fall 2025</span>"]
-          DSSTAT["STAT 4950<br/>Undergraduate Directed Study in Statistics<br/><span class='small'>Fall 2025</span>"]
+          DSSTAT["STAT 4950<br/>Undergraduate Directed Study in Statistics<br/>(Linear Algebra with Application in Statistics)<br/><span class='small'>Fall 2025</span>"]
           MULTI["STAT 6250<br/>Applied Multivariate Analysis<br/><span class='small'>Fall 2025</span>"]
           TS["STAT 6280<br/>Applied Time Series Analysis<br/><span class='small'>Fall 2025</span>"]
 
@@ -118,68 +113,74 @@
           PROB["STAT 6810<br/>Probability Distributions<br/><span class='small'>Fall 2026, in progress/planned</span>"]
 
           %% Main math pathway
-          P0 --> C1
-          P1 --> C1
           C1 --> C2
           C2 --> C3
           C2 --> ODE1
           C3 --> LA
-          C3 --> PROOF
+          C2 --> PROOF
           PROOF --> ANALYSIS0
           ANALYSIS0 --> RA
+          RA --> PROB
 
           %% Applied math pathway
           ODE1 --> ODE2
           C3 --> ODE2
           LA --> NUM
           C3 --> NUM
+          ANALYSIS0 --> NUM
           LA --> OPT
           C3 --> OPT
-          ODE2 --> PDE
+          ODE1 --> PDE
+          ANALYSIS0 --> PDE
           C3 --> PDE
 
           %% Statistics pathway
           S0 --> SM
           SM --> RPROG
-          SM --> EXP
           SM --> REG
-          REG --> MST
+          REG --> EXP
           RPROG --> MSP
           REG --> MSP
+          C3 --> MST
           MST --> INF
-          MST --> MULTI
+          DS1 --> MULTI
+          C3 --> MULTI
+          LA --> MULTI
+          MSP --> MULTI
           REG --> MULTI
           REG --> TS
-          MST --> PROB
+          MSP --> TS
+          INF --> PROB
+          REG --> BAYES
           MST --> BAYES
           INF --> BAYES
-          MULTI --> CAP
-          TS --> CAP
-          INF --> CAP
+          EXP --> CAP
+          REG --> CAP
+          MSP --> CAP
+          MST --> CAP
 
           %% Computer science / data science pathway
           CS1 --> CS2
           CS1 --> DISC
+          DISC --> PROOF
           DISC --> DSALG
           CS2 --> DSALG
           RPROG --> DS1
-          DSALG --> DS1
+          CS1 --> DS1
           DS1 --> MSP
+          DS1 --> MULTI
+          DSALG --> MSP
 
           %% Research pathway
           LA --> DSSTAT
-          MST --> DSSTAT
+          DSSTAT --> PROB
+          DSSTAT --> OPT
+          DSSTAT --> NUM
           DSSTAT --> RES
           INF --> RES
           MULTI --> RES
-          RES --> CAP
-
-          %% Supporting STEM / application context
-          PSYC --> RES
-          WTHR --> DS1
-          ECOL --> DS1
-          WTHR --> TS
-          ECOL --> REG
+          EXP --> RES
+          MSP --> RES
       </div>
     </section>
 
@@ -281,9 +282,10 @@
       <h3>Research and Application Context</h3>
       <p>
         My undergraduate directed study and undergraduate research course helped
-        connect coursework to research. Courses in psychology, ecology, and
-        weather/climate also gave useful context for applied work involving
-        behavioral, environmental, and scientific data.
+        connect coursework to research. These experiences made courses like linear
+        algebra, mathematical statistics, statistical inference, multivariate analysis,
+        experimental design, optimization, and numerical analysis feel more connected
+        to real research problems.
       </p>
     </section>
 
